@@ -1,0 +1,60 @@
+.stats {
+  @include container;
+}
+
+.stats__header {
+  min-height: 130px;
+  padding-top: 27px;
+  padding-right: 38px;
+  padding-bottom: 26px;
+  padding-left: 38px;
+  background-color: rgba(0,255,255,0.3);
+}
+
+.stats__table {
+  height: 369px; //min-height на таблицы не влияет
+  width: 100%;
+  background-color: rgba(255,0,255,0.3);
+}
+
+@media #{$tablet-widths} {
+  .stats {
+    position: relative;
+    z-index: 1;
+    margin-top: -184px;
+  }
+  
+  .stats__header {
+    @include clearfix;
+    padding: 0;
+    padding-top: 31px;
+    padding-bottom: 24px;
+  }
+  
+  .stats__table {
+    @include clearfix;
+    display: block;
+    height: 316px;
+  }
+}
+
+@media #{$desktop-widths} {
+  .stats {
+    @include clearfix;
+    margin-top: -159px;
+  }
+  
+  .stats__header {
+    float: left;
+    width: 240px;
+    min-height: 263px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  
+  .stats__table {
+    float: right;
+    width: 640px;
+    display: block;
+  }
+}

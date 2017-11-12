@@ -1,0 +1,18 @@
+@import "variables.scss";
+body {
+  min-height: 750px;
+  background: $bg-darkgrey url(../img/preview/barbershop-index-mobile.jpg) no-repeat 50% 0;
+  background-size: auto;
+}
+
+@media #{$tablet-widths} {
+  body {
+    background: $bg-darkgrey url(../img/preview/barbershop-index-tablet.jpg) no-repeat 50% 0;
+  }
+}
+
+@media #{$desktop-widths} {
+  body {
+    background: $bg-darkgrey url(../img/preview/barbershop-index-desktop.jpg) no-repeat 50% 0;
+  }
+}
